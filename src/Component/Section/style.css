@@ -1,0 +1,9 @@
+.image {
+    background-image: url('../../assets/Section.images/tour.png');
+    background-size: 100%;
+    height: 600px;
+    opacity: 90%;
+}
+.name {
+    background-color: rgba(0, 0, 0, 0.245);
+}
