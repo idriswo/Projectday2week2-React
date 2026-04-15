@@ -2,12 +2,25 @@ import './style.css'
 import img10 from '../../assets/Section.images/йййй 1.png'
 import Button from '../Shared/Button.jsx'
 import Div4ta from '../../Component/Div4ta/Div4ta.jsx'
+import { FaLocationDot } from "react-icons/fa6";
+
 
 import imgr from '../../assets/Section.images/Group 31.png'
 import imgL from '../../assets/Section.images/Group 74.png'
 export default function Section() {
     return (
         <section className='xl:max-w-[1560px] xl:m-auto'>
+            <div className='bg-[#EDEDED] xl:block hidden'>
+                <div className="flex flex-row    max-w-[1300px] m-auto items-center ">
+                    <Button>Каталог</Button>
+                    <input className="w-[1088px] mb-[22px] border border-gray-400 mt-[30px] pl-[20px] text-[18px] ml-[10px] rounded-2xl h-[50px]" type="text" name="" id="" placeholder="Search" />
+                    <div className="flex mb-[22px] items-center mt-[30px] ml-[30px] gap-[10px]">
+                        <FaLocationDot className='text-[#167FFE]' />
+                        <h1 className="text-[18px]">Иркутск</h1>
+                    </div>
+                </div>
+            </div>
+
             <div className={`image relative z-0`} >
                 <div className='xl:w-[1520px] xl:m-auto bg-[#000000b1] absolute z-10 h-[600px]'>
                     <div className='text-[white]'>
