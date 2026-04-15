@@ -11,8 +11,8 @@ import { FaHome } from "react-icons/fa";
 
 export default function Footer() {
     return (
-        <footer className="bg-[#1E2126] mwax-w-[1560px] m-auto">
-            <div className="max-w-[1300px] m-auto flex justify-between items-start py-[90px]">
+        <footer className="bg-[#1E2126] xl:wax-w-[1560px] xl:m-auto">
+            <div className="xl:max-w-[1300px] xl:m-auto flex flex-col xl:flex-row justify-between items-start py-[90px] px-[20px] xl:px-[0px]">
                 <div className='text-[gray] flex flex-col gap-[20px] items-start'>
                     <img src={imgFooter} alt="" />
                     <h3 className='text-[white]'>8-800-550-01-09</h3>
@@ -20,7 +20,7 @@ export default function Footer() {
                     <img src={imgFooter2} alt="" />
                     <h3>© 2023 все права защищены</h3>
                 </div>
-                <div className='flex justify-between items-start gap-[80px]'>
+                <div className='flex flex-col xl:flex-row justify-between  items-start gap-[80px]'>
                     <div className='text-[gray] flex flex-col gap-[20px] items-start'>
                         <h3 className='text-[white]'>Информация</h3>
                         <p>Оплата</p>

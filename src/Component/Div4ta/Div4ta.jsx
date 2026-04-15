@@ -12,22 +12,22 @@ export default function Div4ta(props) {
     const { title, imgL, imgR } = props
     return (
         <>
-            <div className="max-w-[1300px] m-auto py-[100px] my-[50px] border-b-[3px] border-[#bcbaba]">
-                <div className="flex  justify-between items-center max-w-[1200px] m-auto py-[20px] mr-[20px]">
-                    <h1 className="text-[40px]">{title}</h1>
+            <div className="xl:max-w-[1300px] xl:m-auto xl:py-[100px] my-[50px] border-b-[3px] border-[#bcbaba] px-[10px]">
+                <div className="flex  justify-between items-center xl:max-w-[1200px] xl:m-auto py-[20px] xl:mr-[20px]">
+                    <h1 className="xl:text-[40px] text-[17px] font-bold ">{title}</h1>
                     <Button>Смотреть все</Button>
                 </div>
                 <div className="flex justify-between items-center pt-[20px]">
-                    <img className="mr-[30px]" src={imgL} alt="" />
-                    <div className="max-w-[1200px] m-auto flex gap-[20px] justify-between items-center text-center">
+                    <img className=" xl:block hidden xl:mr-[30px]" src={imgL} alt="" />
+                    <div className="xl:max-w-[1200px] xl:m-auto flex flex-col xl:flex-row gap-[20px] justify-between  items-center text-center px-[30px] xl:px-[0px]">
                         <DivSmall img10={img10} xatak={imgxatak} prag={'Пеноплекс Кофморт 1185х585х20мм 20 плит, 13.86м2, 0.278м3'} price={"2 491 ₽/шт."} icon1={imgIcon1} icon2={imgIcon2} icon3={imgIcon3} icon4={imgIcon4} />
                         <DivSmall img10={img10} xatak={imgxatak} prag={'Пеноплекс Кофморт 1185х585х20мм 20 плит, 13.86м2, 0.278м3'} price={"2 491 ₽/шт."} icon1={imgIcon1} icon2={imgIcon2} icon3={imgIcon3} icon4={imgIcon4} />
                         <DivSmall img10={img10} xatak={imgxatak} prag={'Пеноплекс Кофморт 1185х585х20мм 20 плит, 13.86м2, 0.278м3'} price={"2 491 ₽/шт."} icon1={imgIcon1} icon2={imgIcon2} icon3={imgIcon3} icon4={imgIcon4} />
                         <DivSmall img10={img10} xatak={imgxatak} prag={'Пеноплекс Кофморт 1185х585х20мм 20 плит, 13.86м2, 0.278м3'} price={"2 491 ₽/шт."} icon1={imgIcon1} icon2={imgIcon2} icon3={imgIcon3} icon4={imgIcon4} />
                     </div>
-                    <img className="ml-[30px]" src={imgR} alt="" />
+                    <img className="xl:ml-[30px] xl:block hidden" src={imgR} alt="" />
                 </div>
-            </div>
+            </div>  
         </>
     )
 }
